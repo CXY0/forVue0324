@@ -4,7 +4,7 @@
     <input type='text' placeholder='添加代办事件,按回车键确认'  @keyup.enter="enterFn" v-model="todo"/>
     
     
-  <h5>未完成事件</h5>
+  <h5>未完成的事件</h5>
    <ul>
     <li v-for='item in list' :key="item.title">
      <input type='checkbox' @click='setComplete(item)'/>{{item.title}}
@@ -12,7 +12,7 @@
     </li>
     
     </ul>
-    <h5>已完成事件</h5>
+    <h5>已完成的事件</h5>
     <ul>
     <li v-for='item in list1' :key="item.title">
      <span>{{item.title}}</span><span>{{item.time}}</span>
